@@ -17,7 +17,20 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
-								src={ ciscoImage }
+								src="https://logos-world.net/wp-content/uploads/2020/11/Shopify-Symbol.png"
+								alt="shopify"
+								className="work-image"
+							/>
+							<div className="work-title">Shopify</div>
+							<div className="work-subtitle">
+								Infrastructure Software Engineer Intern
+							</div>
+							<div className="work-duration">Current</div>
+						</div>
+
+						<div className="work">
+							<img
+								src={ciscoImage}
 								alt="cisco"
 								className="work-image"
 							/>
@@ -30,7 +43,7 @@ const Works = () => {
 
 						<div className="work">
 							<img
-								src={ bellImage }
+								src={bellImage}
 								alt="bell"
 								className="work-image"
 							/>
