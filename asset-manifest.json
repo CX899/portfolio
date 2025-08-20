@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d30fb2e0.css",
-    "main.js": "/portfolio/static/js/main.08d8eafb.js",
+    "main.js": "/portfolio/static/js/main.f3d15be2.js",
     "static/media/about.jpg": "/portfolio/static/media/about.a88ef672007dc1236a73.jpg",
     "static/media/cisco.png": "/portfolio/static/media/cisco.bbbfefcb50be8733dff6.png",
     "static/media/bell.png": "/portfolio/static/media/bell.523186e5d672ffc54738.png",
@@ -9,10 +9,10 @@
     "static/media/icon.jpeg": "/portfolio/static/media/icon.e0c4ab8b945f1d342241.jpeg",
     "index.html": "/portfolio/index.html",
     "main.d30fb2e0.css.map": "/portfolio/static/css/main.d30fb2e0.css.map",
-    "main.08d8eafb.js.map": "/portfolio/static/js/main.08d8eafb.js.map"
+    "main.f3d15be2.js.map": "/portfolio/static/js/main.f3d15be2.js.map"
   },
   "entrypoints": [
     "static/css/main.d30fb2e0.css",
-    "static/js/main.08d8eafb.js"
+    "static/js/main.f3d15be2.js"
   ]
 }
