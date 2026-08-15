@@ -19,6 +19,21 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
+								src="https://cdn.worldvectorlogo.com/logos/aws-2.svg"
+								alt="aws"
+								className="work-image"
+							/>
+							<div className="work-title">Amazon Web Services</div>
+							<div className="work-subtitle">
+								Software Developer Intern
+							</div>
+							<div className="work-duration">
+								Jun 2026 - Present
+							</div>
+						</div>
+
+						<div className="work">
+							<img
 								src="https://cdn.worldvectorlogo.com/logos/shopify.svg"
 								alt="shopify"
 								className="work-image"
@@ -28,7 +43,7 @@ const Works = () => {
 								Infrastructure Software Engineer Intern
 							</div>
 							<div className="work-duration">
-								May 2025 - Present
+								May 2025 - Dec 2025
 							</div>
 						</div>
 
@@ -56,7 +71,7 @@ const Works = () => {
 								Full Stack Software Engineer
 							</div>
 							<div className="work-duration">
-								Jul 2023 - May 2025
+								Jul 2023 - Apr 2025
 							</div>
 						</div>
 

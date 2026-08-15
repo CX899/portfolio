@@ -2,15 +2,17 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I’m a Software Engineering student at McGill University, currently an Infrastructure Software Engineering Intern on the Database Platform team at Shopify and co-founder of Conex.",
+			"I’m a Software Engineering student at McGill University, currently a Software Developer Intern at Amazon Web Services, previously at Shopify, and co-founder of Conex.",
 		keywords: [
 			"CX899",
 			"Colin",
 			"Colin Xiong",
 			"Software Engineering",
 			"McGill University",
+			"AWS",
 			"Shopify",
 			"Conex",
+			"Rust",
 			"Distributed Systems",
 		],
 	},
@@ -18,15 +20,17 @@ const SEO = [
 	{
 		page: "about",
 		description:
-			"I’m a Software Engineering student at McGill University, currently an Infrastructure Software Engineering Intern on the Database Platform team at Shopify and co-founder of Conex.",
+			"I’m a Software Engineering student at McGill University, currently a Software Developer Intern at Amazon Web Services, previously at Shopify, and co-founder of Conex.",
 		keywords: [
 			"CX899",
 			"Colin",
 			"Colin Xiong",
 			"Software Engineering",
 			"McGill University",
+			"AWS",
 			"Shopify",
 			"Conex",
+			"Rust",
 			"Distributed Systems",
 		],
 		},

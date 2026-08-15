@@ -16,13 +16,13 @@ const INFO = {
 	homepage: {
 		title: "Software Engineering Student, Startup Founder, Varsity Badminton Athlete.",
 		description:
-			"Hi, I'm Colin Xiong, a Software Engineering student at McGill University graduating in December 2026. I'm currently an Infrastructure Software Engineering Intern on the Database Platform team at Shopify, where I build and operate large-scale distributed database infrastructure — deploying YugabyteDB across seven global regions, running fault-tolerant storage for petabytes of commerce data, and building cluster monitoring and recovery tooling. Most recently I co-founded Conex through the Dobson Startup School, a venture focused on optimizing workflows inside civil engineering firms. Before Shopify I interned at Cisco on LLM and RAG-based developer tooling, at Bell Canada on real-time complex event processing with Apache Flink and Kafka, and at meSO Groupe Inc. as a full stack engineer building event-driven microservices on AWS. Together these have given me exposure to backend, infrastructure, and full stack work across very different scales and industries.",
+			"Hi, I'm Colin Xiong, a Software Engineering student at McGill University graduating in May 2027. I'm currently a Software Developer Intern at Amazon Web Services in Vancouver, working in Rust on CloudFront invalidation infrastructure — replacing poll-based propagation with a synchronous push-and-ack model and load testing it across a 16-region EC2 fleet. Before AWS I was an Infrastructure Software Engineering Intern on Shopify's Database Platform team, deploying YugabyteDB across seven global regions for fault-tolerant storage of petabytes of commerce data. I also co-founded Conex through the McGill Dobson Startup School, a venture focused on optimizing workflows inside civil engineering firms, and interned at Cisco on LLM and RAG-based developer tooling, at Bell Canada on real-time complex event processing with Apache Flink and Kafka, and at meSO Groupe Inc. as a full stack engineer. Together these have given me exposure to distributed systems, infrastructure, and full stack work across very different scales and industries.",
 	},
 
 	about: {
 		title: "My name is Colin Xiong. I live in Montreal and study at McGill University.",
 		description:
-			"I've been involved in a range of projects throughout my time at McGill, as well as during my internships at Shopify, Cisco, Bell Canada, and meSO Groupe Inc. I'm currently an Infrastructure Software Engineering Intern on the Database Platform team at Shopify, working on distributed database infrastructure, observability, and backup and recovery at scale. Outside of my internships I recently went through the Dobson Startup School to build Conex, a product aimed at streamlining the document and approval workflows that slow down civil engineering companies — my first real experience taking something from a problem statement to a validated product. I'm particularly proud of my work on complex event processing with Apache Flink at Bell, my contributions to AI and LLM-based tooling at Cisco, and my full stack and AWS microservices work at meSO Groupe Inc. Some of these projects are open-source, and I'd love for others to explore, contribute, or provide feedback. If you're interested in any of the projects I've worked on, feel free to check out the code. I'm always open to collaboration and new ideas, as it's a great way to continue learning and growing.",
+			"I've been involved in a range of projects throughout my time at McGill, as well as during my internships at Amazon Web Services, Shopify, Cisco, Bell Canada, and meSO Groupe Inc. I'm currently a Software Developer Intern at AWS in Vancouver, building distributed infrastructure in Rust for CloudFront invalidations. Before that I spent my work term on Shopify's Database Platform team, working on distributed database infrastructure, observability, and backup and recovery at scale. Outside of my internships I went through the McGill Dobson Startup School to build Conex, a product aimed at streamlining the document and approval workflows that slow down civil engineering companies — my first real experience taking something from a problem statement to a validated product. I'm particularly proud of my work on complex event processing with Apache Flink at Bell, my contributions to AI and LLM-based tooling at Cisco, and my full stack work at meSO Groupe Inc. Some of these projects are open-source, and I'd love for others to explore, contribute, or provide feedback. If you're interested in any of the projects I've worked on, feel free to check out the code. I'm always open to collaboration and new ideas, as it's a great way to continue learning and growing.",
 	},
 
 	projects: [
@@ -33,6 +33,17 @@ const INFO = {
 			logo1: `${DEVICON}/react/react-original.svg`,
 			logo2: `${DEVICON}/typescript/typescript-original.svg`,
 			logo3: `${DEVICON}/postgresql/postgresql-original.svg`,
+			linkText: "Learn More",
+			link: "https://www.linkedin.com/in/colinxiong/",
+		},
+
+		{
+			title: "CloudFront Invalidation Propagation",
+			description:
+				"Distributed infrastructure work at AWS: an end-to-end proof of concept in Rust that replaces poll-based propagation of CloudFront invalidations with a synchronous push-and-ack model. Redesigned the regional hub to process records concurrently for a 150x gain in per-connection throughput, load tested to 1,200 records/sec across a 16-region EC2 fleet with zero failed confirmations at under 2% hub CPU, and implemented both raw TCP and gRPC transports to compare latency, wire cost, and failure behavior.",
+			logo1: `${DEVICON}/rust/rust-original.svg`,
+			logo2: `${DEVICON}/grpc/grpc-original.svg`,
+			logo3: `${DEVICON}/amazonwebservices/amazonwebservices-plain-wordmark.svg`,
 			linkText: "Learn More",
 			link: "https://www.linkedin.com/in/colinxiong/",
 		},
@@ -49,9 +60,9 @@ const INFO = {
 		},
 
 		{
-			title: "AWS Event-Driven Microservices",
+			title: "Event-Driven Microservices Platform",
 			description:
-				"An event-driven microservices platform built at meSO Groupe Inc., routing traffic through an ALB into Dockerized filtering services and caching ranked match pools in Redis via SQS-triggered processing. Includes 30+ REST endpoints backed by MongoDB, Redis, and S3, with Winston logging shipped to CloudWatch.",
+				"A full stack event-driven microservices platform built at meSO Groupe Inc., routing traffic through an ALB into Dockerized filtering services and caching ranked match pools in Redis via SQS-triggered processing. Includes 30+ REST endpoints backed by MongoDB, Redis, and S3, with Winston logging shipped to CloudWatch.",
 			logo1: `${DEVICON}/amazonwebservices/amazonwebservices-original-wordmark.svg`,
 			logo2: `${DEVICON}/docker/docker-original.svg`,
 			logo3: `${DEVICON}/redis/redis-original.svg`,

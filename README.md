@@ -1,13 +1,13 @@
 # CX899 Portfolio
 
-Personal portfolio for **Colin Xiong** — Software Engineering student at McGill University (B.Eng., Co-op, Dec 2026).
+Personal portfolio for **Colin Xiong** — Software Engineering student at McGill University (B.Eng., Co-op, May 2027).
 
 **Live site:** https://cx899.github.io/portfolio
 
 ## About
 
 Built with React (Create React App) and deployed to GitHub Pages. The site collects my
-internship experience (Shopify, Cisco, Bell Canada, meSO Groupe Inc.), my startup work on
+internship experience (AWS, Shopify, Cisco, Bell Canada, meSO Groupe Inc.), my startup work on
 Conex through the McGill Dobson Startup School, and the personal and course projects I've
 shipped along the way.
 
