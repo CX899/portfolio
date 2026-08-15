@@ -1,3 +1,5 @@
+const DEVICON = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons";
+
 const INFO = {
 	main: {
 		title: "CX899 portfolio",
@@ -12,25 +14,58 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Software Engineering Student, Varsity Badminton Athlete, Creator of Random.",
+		title: "Software Engineering Student, Startup Founder, Varsity Badminton Athlete.",
 		description:
-			"Hi, I'm Colin Xiong, a Software Engineering student at McGill University. I'm currently working as an Infrastructure Software Engineering Intern on the Database Platform team at Shopify, where I'm involved in building and optimizing large-scale database infrastructure systems. I've also had valuable internship experiences at Cisco, Bell Canada, and meSO Groupe Inc. At Cisco, I worked on AI and LLM-based projects, while at Bell I focused on complex event processing with Apache Flink. At meSO Groupe Inc., I developed scalable REST APIs and worked on full-stack projects using technologies like React Native, Nest.js, and MongoDB. These diverse experiences have given me exposure to a wide range of backend and frontend technologies across different scales and industries.",
+			"Hi, I'm Colin Xiong, a Software Engineering student at McGill University graduating in December 2026. I'm currently an Infrastructure Software Engineering Intern on the Database Platform team at Shopify, where I build and operate large-scale distributed database infrastructure — deploying YugabyteDB across seven global regions, running fault-tolerant storage for petabytes of commerce data, and building cluster monitoring and recovery tooling. Most recently I co-founded Conex through the Dobson Startup School, a venture focused on optimizing workflows inside civil engineering firms. Before Shopify I interned at Cisco on LLM and RAG-based developer tooling, at Bell Canada on real-time complex event processing with Apache Flink and Kafka, and at meSO Groupe Inc. as a full stack engineer building event-driven microservices on AWS. Together these have given me exposure to backend, infrastructure, and full stack work across very different scales and industries.",
 	},
 
 	about: {
 		title: "My name is Colin Xiong. I live in Montreal and study at McGill University.",
 		description:
-			"I've been involved in a range of projects throughout my time at McGill, as well as during my internships at Shopify, Cisco, Bell Canada, and meSO Groupe Inc. Currently, I'm working as an Infrastructure Software Engineering Intern on the Database Platform team at Shopify, where I'm gaining hands-on experience with large-scale database infrastructure and distributed systems. I'm particularly proud of my work on complex event processing with Apache Flink at Bell, my contributions to AI and LLM-based projects at Cisco, and my full-stack development work at meSO Groupe Inc. Some of these projects are open-source, and I'd love for others to explore, contribute, or provide feedback. If you're interested in any of the projects I've worked on, feel free to check out the code. I'm always open to collaboration and new ideas, as it's a great way to continue learning and growing.",
+			"I've been involved in a range of projects throughout my time at McGill, as well as during my internships at Shopify, Cisco, Bell Canada, and meSO Groupe Inc. I'm currently an Infrastructure Software Engineering Intern on the Database Platform team at Shopify, working on distributed database infrastructure, observability, and backup and recovery at scale. Outside of my internships I recently went through the Dobson Startup School to build Conex, a product aimed at streamlining the document and approval workflows that slow down civil engineering companies — my first real experience taking something from a problem statement to a validated product. I'm particularly proud of my work on complex event processing with Apache Flink at Bell, my contributions to AI and LLM-based tooling at Cisco, and my full stack and AWS microservices work at meSO Groupe Inc. Some of these projects are open-source, and I'd love for others to explore, contribute, or provide feedback. If you're interested in any of the projects I've worked on, feel free to check out the code. I'm always open to collaboration and new ideas, as it's a great way to continue learning and growing.",
 	},
 
 	projects: [
 		{
+			title: "Conex",
+			description:
+				"A venture built through the McGill Dobson Startup School aimed at optimizing workflows inside civil engineering companies, replacing scattered email and spreadsheet approvals with a single tracked pipeline for drawings, submittals, and revisions. Covered customer discovery, product validation, and a working prototype.",
+			logo1: `${DEVICON}/react/react-original.svg`,
+			logo2: `${DEVICON}/typescript/typescript-original.svg`,
+			logo3: `${DEVICON}/postgresql/postgresql-original.svg`,
+			linkText: "Learn More",
+			link: "https://www.linkedin.com/in/colinxiong/",
+		},
+
+		{
+			title: "Distributed Database Infrastructure",
+			description:
+				"Infrastructure work on Shopify's Database Platform team: deploying YugabyteDB across seven global regions for fault-tolerant storage of 5+ petabytes of commerce data, real-time cluster monitoring with Prometheus and Grafana including clock skew detection and alerting, and GCS-based recovery for tablespaces and roles from metadata snapshots.",
+			logo1: `${DEVICON}/go/go-original-wordmark.svg`,
+			logo2: `${DEVICON}/prometheus/prometheus-original.svg`,
+			logo3: `${DEVICON}/grafana/grafana-original.svg`,
+			linkText: "Learn More",
+			link: "https://www.linkedin.com/in/colinxiong/",
+		},
+
+		{
+			title: "AWS Event-Driven Microservices",
+			description:
+				"An event-driven microservices platform built at meSO Groupe Inc., routing traffic through an ALB into Dockerized filtering services and caching ranked match pools in Redis via SQS-triggered processing. Includes 30+ REST endpoints backed by MongoDB, Redis, and S3, with Winston logging shipped to CloudWatch.",
+			logo1: `${DEVICON}/amazonwebservices/amazonwebservices-original-wordmark.svg`,
+			logo2: `${DEVICON}/docker/docker-original.svg`,
+			logo3: `${DEVICON}/redis/redis-original.svg`,
+			linkText: "Learn More",
+			link: "https://www.linkedin.com/in/colinxiong/",
+		},
+
+		{
 			title: "GoodLuckTruck",
 			description:
 				"GoodLuckTruck is an innovative platform designed to optimize freight matching for truckers. It intelligently connects truck drivers with the most suitable loads using a combination of geospatial data and advanced filtering algorithms.",
-			logo1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyp7FFYRwNKbTumOgu4zGIJOQpv8y0ngkLHw&s",
-			logo2: "https://developer.apple.com/swift/images/swift-logo.svg",
-			logo3: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/2048px-Python_logo_01.svg.png",
+			logo1: `${DEVICON}/swift/swift-original.svg`,
+			logo2: `${DEVICON}/python/python-original.svg`,
+			logo3: `${DEVICON}/javascript/javascript-original.svg`,
 			linkText: "View Project",
 			link: "https://github.com/CX899/GoodLuckTruck",
 		},
@@ -39,31 +74,20 @@ const INFO = {
 			title: "Quant_Algo",
 			description:
 				"A comprehensive quantitative trading algorithms project implementing various financial models and strategies. Features advanced statistical analysis, backtesting capabilities, and automated trading systems using Python.",
-			logo1: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/2048px-Python_logo_01.svg.png",
-			logo2: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/2560px-Pandas_logo.svg.png",
-			logo3: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/2560px-NumPy_logo_2020.svg.png",
+			logo1: `${DEVICON}/python/python-original.svg`,
+			logo2: `${DEVICON}/pandas/pandas-original.svg`,
+			logo3: `${DEVICON}/numpy/numpy-original.svg`,
 			linkText: "View Project",
 			link: "https://github.com/CX899/Quant_Algo",
 		},
 
 		{
-			title: "Construction",
-			description:
-				"A comprehensive construction management system designed to streamline project workflows, resource allocation, and team coordination. Built with modern web technologies to enhance productivity in construction projects.",
-			logo1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyp7FFYRwNKbTumOgu4zGIJOQpv8y0ngkLHw&s",
-			logo2: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png",
-			logo3: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com/CX899/Construction",
-		},
-
-		{
 			title: "SportCenterManagement",
 			description:
-				"Developed a sport center management webapp according to client requirements and project stakeholders.",
-			logo1: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
-			logo2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRLXF8VSI5tMlBTfy-9UDvnO6OGMOvgGFz5g&s",
-			logo3: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8i4zPog-0j0JR_yZglxPhTPZXxN2iMTQ3Dw&s",
+				"A sport center management web app built to client requirements with project stakeholders. Features dynamic query filtering and pagination through Hibernate and QueryBuilder, plus 30+ OpenAPI-compliant REST endpoints backed by PostgreSQL.",
+			logo1: `${DEVICON}/java/java-original.svg`,
+			logo2: `${DEVICON}/spring/spring-original.svg`,
+			logo3: `${DEVICON}/postgresql/postgresql-original.svg`,
 			linkText: "View Project",
 			link: "https://github.com/CX899/SportCenterManagement",
 		},
@@ -72,9 +96,9 @@ const INFO = {
 			title: "SicknessHacks",
 			description:
 				"Developed a web app that gives a possible preliminary diagnosis for the patient's illness. It also tells him whether or not they should go to the hospital.",
-			logo1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyp7FFYRwNKbTumOgu4zGIJOQpv8y0ngkLHw&s",
-			logo2: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/2048px-Python_logo_01.svg.png",
-			logo3: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			logo1: `${DEVICON}/python/python-original.svg`,
+			logo2: `${DEVICON}/javascript/javascript-original.svg`,
+			logo3: `${DEVICON}/html5/html5-original.svg`,
 			linkText: "View Project",
 			link: "https://github.com/CX899/SicknessHacks",
 		},
@@ -83,9 +107,9 @@ const INFO = {
 			title: "RedBirdRoster",
 			description:
 				"RedBirdsRoster streamlines task management with a user-friendly design and pleasant interface.",
-			logo1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyp7FFYRwNKbTumOgu4zGIJOQpv8y0ngkLHw&s",
-			logo2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-e_zLyIIrlVMxClajEd6a1KCSg8D5koXLQ&s",
-			logo3: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
+			logo1: `${DEVICON}/react/react-original.svg`,
+			logo2: `${DEVICON}/javascript/javascript-original.svg`,
+			logo3: `${DEVICON}/tailwindcss/tailwindcss-original.svg`,
 			linkText: "View Project",
 			link: "https://github.com/CX899/RedBirdRoster",
 		},

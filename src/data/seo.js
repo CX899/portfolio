@@ -2,15 +2,33 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I’m a Software Engineering student at McGill University, currently working as a Full Stack Software Engineer at a startup called meSO Groupe Inc.",
-		keywords: ["CX899", "Colin", "Colin Xiong"],
+			"I’m a Software Engineering student at McGill University, currently an Infrastructure Software Engineering Intern on the Database Platform team at Shopify and co-founder of Conex.",
+		keywords: [
+			"CX899",
+			"Colin",
+			"Colin Xiong",
+			"Software Engineering",
+			"McGill University",
+			"Shopify",
+			"Conex",
+			"Distributed Systems",
+		],
 	},
 
 	{
 		page: "about",
 		description:
-			"I’m a Software Engineering student at McGill University, currently working as a Full Stack Software Engineer at a startup called meSO Groupe Inc.",
-		keywords: ["CX899", "Colin", "Colin Xiong"],
+			"I’m a Software Engineering student at McGill University, currently an Infrastructure Software Engineering Intern on the Database Platform team at Shopify and co-founder of Conex.",
+		keywords: [
+			"CX899",
+			"Colin",
+			"Colin Xiong",
+			"Software Engineering",
+			"McGill University",
+			"Shopify",
+			"Conex",
+			"Distributed Systems",
+		],
 		},
 
 	{
